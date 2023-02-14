@@ -1,0 +1,13 @@
+{% extends  'layouts/base.htm' %}
+
+{% block contend %}
+<form method="POST">
+    {% csrf_token %}
+    {{forms.as_p}}
+    <button>
+        Save
+    </button>
+
+</form>
+
+{% endblock %}
